@@ -1,0 +1,103 @@
+
+
+/* Table Layout */
+.table-responsive {
+  overflow-x: auto;
+}
+canvas {
+  width: 100%;
+}
+
+table {
+    border-spacing: 0;
+    background:#f6f6ef;
+    color: black;
+}
+
+table th, table td {
+    text-align: center;
+}
+
+table thead {
+    line-height: 12px;
+    background: #ff742b;
+    text-transform: uppercase;
+}
+
+table thead th {
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+    vertical-align: inherit;
+}
+
+table thead th:nth-child(1) {
+    width: 5%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+table thead th:nth-child(2) {
+    width: 5%;
+}
+
+table thead th:nth-child(3) {
+    width: 5%;
+}
+
+table thead th:nth-child(4) {
+    width: 85%;
+}
+
+table tbody {
+    font-size: 1em;
+    line-height: 15px;
+}
+
+
+table tbody tr:nth-child(even) {
+    background: #e1e1e1;
+}
+
+table tbody td {
+    padding: 12px;
+}
+
+table tbody td:last-child {
+  text-align: left;
+}
+
+table tbody td:last-child span:nth-child(even){
+    font-size: 0.8em;
+    padding: 0px 5px;
+    color: grey;
+}
+table tbody td:last-child span:nth-child(odd){
+  font-size: 0.8em;
+  padding: 0px 5px;
+}
+table tbody td:last-child span:first-child {
+  font-size: 1em;
+}
+
+div.btns {
+  text-align: right;
+  margin-top: 10px;
+  border-bottom: 3px solid #ff742b;
+  padding-bottom: 10px;
+}
+div button {
+  font-size: 1em;
+  background: transparent;
+  border: 0;
+  padding-right: 20px;
+  margin-left: 20px;
+  border-right: 2px solid #ff742b;
+  color: #ff742b;
+}
+div button:last-child {
+  border-right: 0px; 
+}
+div button:disabled {
+  color: grey;
+}
