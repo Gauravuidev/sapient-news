@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-const {result} = window.__INITIAL__DATA__;
+//const {result} = window.__INITIAL__DATA__;
 ReactDOM.hydrate(
   <React.StrictMode>
-    <App {...result}/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
