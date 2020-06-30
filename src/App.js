@@ -39,7 +39,7 @@ class App extends React.Component {
     });
     
     const abc = xyz.map((data1, id)=> {
-      if(this.state.upVote == data1.objectID) {
+      if(this.state.upVote === data1.objectID) {
         data1.points = data1.points + 1;
         this.setState({
           upVoteArr: [...this.state.upVoteArr, data1.objectID]
@@ -75,7 +75,7 @@ class App extends React.Component {
   }
   
   getData (data) {
-    if (data == 'next') {
+    if (data === 'next') {
       this.setState({
         pageNumber: this.state.pageNumber + 1
       }, this.updation.bind(this));
@@ -156,8 +156,8 @@ class App extends React.Component {
         </table>
         </div>
         <div className="btns">
-          <button type="button" disabled={this.state.pageNumber == 0 ? 'disabled' : ''} onClick={this.getData.bind(this, 'prev')}>Prev</button>
-          <button type="button" disabled={this.state.pageNumber == this.state.totalPages ? 'disabled' : ''} onClick={this.getData.bind(this, 'next')}>Next</button>
+          <button type="button" disabled={this.state.pageNumber === 0 ? 'disabled' : ''} onClick={this.getData.bind(this, 'prev')}>Prev</button>
+          <button type="button" disabled={this.state.pageNumber === this.state.totalPages ? 'disabled' : ''} onClick={this.getData.bind(this, 'next')}>Next</button>
         </div>
         <div>
         <Line
