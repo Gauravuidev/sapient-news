@@ -1,3 +1,16 @@
+Approach :- 
+
+Server:-
+1) Get API data from Axios
+2) Populate first page from server side with help of rendertostring function
+3) Passing data to client side with help of window object
+4) Whenever we reload data come from server side
+
+Client:-
+1) Pagination is done with help of window history state.
+2) With help of local storage we are saving data for page reload
+3) Graph value dynamically update whenever any change made to table
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,7 +20,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
